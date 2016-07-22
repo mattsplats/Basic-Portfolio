@@ -1,18 +1,26 @@
 body {
-	background-color: #ffffff;
-	border-color: #dddddd;
+	background: url('../images/background_pattern.png') #ffffff; 
+	border: #dddddd;
 
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
 }
 
 header {
-	background-color: #ffffff;
-	border-color: #cccccc;
-
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	background: #ffffff;
+	border: #cccccc;
 }
 
 footer {
-	background-color: #666666;
+	background: #666666;
+}
+
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#your_name {
+	height: 90px;
+	width: 250px;
+	float: left;
 }
