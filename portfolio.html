@@ -11,40 +11,50 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header>
-		<div id="header_block">
-			<div id="name_block"><h1 id="name_text">Matt Davis</h1></div>
-			<nav>
-				<div>
-					<span class="nav_add_bar"><a href="index.html">About</a>&nbsp;&nbsp;&nbsp;</span>
-					<span class="nav_add_bar">&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;</span>
-					<span>&nbsp;&nbsp;<a href="contact.html">Contact</a></span>
+	<div class="wrapper">
+		<header>
+			<div id="header_block">
+				<div id="name_block"><h1 id="name_text">Matt Davis</h1></div>
+				<nav>
+					<div>
+						<span class="nav_add_bar"><a href="index.html">About</a>&nbsp;&nbsp;&nbsp;</span>
+						<span class="nav_add_bar">&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;</span>
+						<span>&nbsp;&nbsp;<a href="contact.html">Contact</a></span>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="main_block">
+			<section id="main_content">
+				<div id="content_margins">
+					<h1>Portfolio</h1>
+					<div id="content_grey_line"></div>
+					<div class="portfolio_pic_left"><img src="assets/images/portfolio_1.jpg" alt="Hangman"></div>
+					<div class="portfolio_pic_right"><img src="assets/images/portfolio_2.jpg" alt="RPG Game"></div>
+					<div class="portfolio_pic_left"><img src="assets/images/portfolio_3.jpg" alt="Trivia Game"></div>
+					<div class="portfolio_pic_right"><img src="assets/images/portfolio_4.jpg" alt="Rutgers Info Widget"></div>
+					<div class="portfolio_pic_left"><img src="assets/images/portfolio_5.jpg" alt="Rock Paper Scissors"></div>
 				</div>
-			</nav>
-		</div>
-	</header>
+			</section>
 
-	<section id="main_content">
-		<h1>Portfolio</h1>
-		<div id="content_grey_line"></div>
-		<div class="portfolio_pic"><img src="assets/images/portfolio_1.jpg" alt="Hangman">Hangman</div>
-		<div class="portfolio_pic"><img src="assets/images/portfolio_2.jpg" alt="RPG Game">RPG Game</div>
-		<div class="portfolio_pic"><img src="assets/images/portfolio_3.jpg" alt="Trivia Game">Trivia Game</div>
-		<div class="portfolio_pic"><img src="assets/images/portfolio_4.jpg" alt="Rutgers Info Widget">Rutgers Info Widget</div>
-		<div class="portfolio_pic"><img src="assets/images/portfolio_5.jpg" alt="Rock Paper Scissors">Rock Paper Scissors</div>
-	</section>
-
-	<section id="connect_with_me">
-		<h2>Connect with Me</h2>
-		<div id="connect_grey_line"></div>
-		<div id="social_images">
-			<img src="assets/images/social_github.png" alt="GitHub"><img src="assets/images/social_linkedin.png" alt="LinkedIn"><img src="assets/images/social_stackoverflow.png" alt="StackOverflow">
+			<section id="connect_with_me">
+				<div id="connect_margins">
+					<h2>Connect with Me</h2>
+					<div id="connect_grey_line"></div>
+					<div id="social_images">
+						<img src="assets/images/social_github.png" alt="GitHub"><img id="connect_icon_middle" src="assets/images/social_linkedin.png" alt="LinkedIn"><img src="assets/images/social_stackoverflow.png" alt="StackOverflow">
+					</div>
+				</div>
+			</section>
 		</div>
-	</section>
+
+		<!-- sticky footer "push" -->
+		<div class="push"></div>
+	</div>
 
 	<footer>
-		<div id="footer_green_line"></div>
-		<p id="copyright">© Copyright 2016 Matt Davis</p>
+		<div id="footer_text">© Copyright 2016 Matt Davis</div>
 	</footer>
 </body>
 </html>

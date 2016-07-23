@@ -11,46 +11,57 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header>
-		<div id="header_block">
-			<div id="name_block"><h1 id="name_text">Matt Davis</h1></div>
-			<nav>
-				<div>
-					<span class="nav_add_bar"><a href="index.html">About</a>&nbsp;&nbsp;&nbsp;</span>
-					<span class="nav_add_bar">&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;</span>
-					<span>&nbsp;&nbsp;<a href="contact.html">Contact</a></span>
+	<div class="wrapper">
+		<header>
+			<div id="header_block">
+				<div id="name_block"><h1 id="name_text">Matt Davis</h1></div>
+				<nav>
+					<div>
+						<span class="nav_add_bar"><a href="index.html">About</a>&nbsp;&nbsp;&nbsp;</span>
+						<span class="nav_add_bar">&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;</span>
+						<span>&nbsp;&nbsp;<a href="contact.html">Contact</a></span>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="main_block">
+			<section id="main_content">
+				<div id="content_margins">
+					<h1>Contact</h1>
+					<div id="content_grey_line"></div>
+
+					<label>Name</label><br/>
+					<input type="text" name="name" value="John Smith"><br/><br/>
+
+					<label>Email</label><br/>
+					<input type="email" name="email" value="example@gmail.com"><br/><br/>
+
+					<label>Message</label><br/>
+					<textarea name="message"></textarea><br/>
+
+					<div id="submit_button"><input type="submit" value="Submit"></div>
 				</div>
-			</nav>
+			</section>
+
+
+			<section id="connect_with_me">
+				<div id="connect_margins">
+					<h2>Connect with Me</h2>
+					<div id="connect_grey_line"></div>
+					<div id="social_images">
+						<img src="assets/images/social_github.png" alt="GitHub"><img id="connect_icon_middle" src="assets/images/social_linkedin.png" alt="LinkedIn"><img src="assets/images/social_stackoverflow.png" alt="StackOverflow">
+					</div>
+				</div>
+			</section>
 		</div>
-	</header>
-
-	<section id="main_content">
-		<h1>Contact</h1>
-		<div id="content_grey_line"></div>
-
-		<label>Name</label>
-		<input type="text" name="name" value="John Smith">
-
-		<label>Email</label>
-		<input type="email" name="email" value="example@gmail.com">
-
-		<label>Message</label>
-		<textarea name="message"></textarea>
-
-		<div id="submit_button"><input type="submit" value="Submit"></div>
-	</section>
-
-	<section id="connect_with_me">
-		<h2>Connect with Me</h2>
-		<div id="connect_grey_line"></div>
-		<div id="social_images">
-			<img src="assets/images/social_github.png" alt="GitHub"><img src="assets/images/social_linkedin.png" alt="LinkedIn"><img src="assets/images/social_stackoverflow.png" alt="StackOverflow">
-		</div>
-	</section>
+	
+		<!-- sticky footer "push" -->
+		<div class="push"></div>
+	</div>
 
 	<footer>
-		<div id="footer_green_line"></div>
-		<p id="copyright">© Copyright 2016 Matt Davis</p>
+		<div id="footer_text">© Copyright 2016 Matt Davis</div>
 	</footer>
 </body>
 </html>

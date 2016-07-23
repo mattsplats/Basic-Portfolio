@@ -11,43 +11,48 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header>
-		<div id="header_block">
-			<div id="name_block"><h1 id="name_text">Matt Davis</h1></div>
-			<nav>
-				<div>
-					<span class="nav_add_bar"><a href="index.html">About</a>&nbsp;&nbsp;&nbsp;</span>
-					<span class="nav_add_bar">&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;</span>
-					<span>&nbsp;&nbsp;<a href="contact.html">Contact</a></span>
+	<div class="wrapper">
+		<header>
+			<div id="header_block">
+				<div id="name_block"><h1 id="name_text">Matt Davis</h1></div>
+				<nav>
+					<div>
+						<span class="nav_add_bar"><a href="index.html">About</a>&nbsp;&nbsp;&nbsp;</span>
+						<span class="nav_add_bar">&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;</span>
+						<span>&nbsp;&nbsp;<a href="contact.html">Contact</a></span>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="main_block">
+			<section id="main_content">
+				<div id="content_margins">
+					<h1>About Me</h1>
+					<div id="content_grey_line"></div>
+					<img id="profile_image" src="assets/images/profile.jpg" alt="My Pic">
+					<p>Puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens ...</p><br/>
+					<p>Puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies</p>
 				</div>
-			</nav>
+			</section>
+
+			<section id="connect_with_me">
+				<div id="connect_margins">
+					<h2>Connect with Me</h2>
+					<div id="connect_grey_line"></div>
+					<div id="social_images">
+						<img src="assets/images/social_github.png" alt="GitHub"><img id="connect_icon_middle" src="assets/images/social_linkedin.png" alt="LinkedIn"><img src="assets/images/social_stackoverflow.png" alt="StackOverflow">
+					</div>
+				</div>
+			</section>
 		</div>
-	</header>
-
-	<div id="main_block">
-		<section id="main_content">
-			<div class="content_connect_margins">
-				<h1>About Me</h1>
-				<div id="content_grey_line"></div>
-				<img id="profile_image" src="assets/images/profile.jpg" alt="My Pic">
-				<p>Puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens ...</p>
-				<p>Puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies, kittens, puppies</p>
-			</div>
-		</section>
-
-		<section id="connect_with_me">
-			<div class="content_connect_margins">
-				<h2>Connect with Me</h2>
-				<div id="connect_grey_line"></div>
-				<div id="social_images">
-					<img src="assets/images/social_github.png" alt="GitHub"><img src="assets/images/social_linkedin.png" alt="LinkedIn"><img src="assets/images/social_stackoverflow.png" alt="StackOverflow">
-				</div>
-			</div>
-		</section>
+	
+		<!-- sticky footer "push" -->
+		<div class="push"></div>
 	</div>
 
 	<footer>
-		<div>© Copyright 2016 Matt Davis</div>
+		<div id="footer_text">© Copyright 2016 Matt Davis</div>
 	</footer>
 </body>
 </html>
