@@ -19,7 +19,7 @@ html, body {
 }
 
 
-/* all HTML tags */
+/* selectors for all HTML tags across all pages */
 * {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
@@ -47,77 +47,13 @@ h3 {
 	font-size: 22px
 }
 
-input, textarea {
-	border: 1px solid #dddddd;
-	width: 564px;
-	margin-top: 5px;
-	padding: 8px 10px;
 
-	font-size: 14px;
-	color: #a9a9a9;
-}
-
-textarea {
-	height: 198px;
-}
-
-input[type=submit] {
-	background: #4aaaa5;
-	border: 0px;
-	outline: none;
-	width: auto;
-	margin-top: 15px;
-	padding: 10px 30px;
-
-	font-size: 18px;
-	color: white;
-
-	transition: background 0.1s;
-}
-
-input[type=submit]:hover {
-	background: #777777;
-}
-
-
-/* main section blocks */
+/* selectors for header content */
 header {
 	background: #ffffff;
 	border-bottom: 2px solid #cccccc;
 }
 
-nav {
-	height: 20px;
-}
-
-section, aside {
-	background: #ffffff;
-	border: 1px solid #dddddd;
-	width: 648px;
-	color: #777777;
-}
-
-aside {
-	width: 268px;
-	height: 198px;
-}
-
-section p {
-	line-height: 190%;
-}
-
-footer {
-	background: #666666;
-	border-top: 9px solid #4aaaa5;
-	height: 100px;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-
-/* id/class for all pages */
 #header_block {
 	width: 960px;
 	height: 90px;
@@ -128,7 +64,7 @@ footer {
 	justify-content: space-between;
 }
 
-#name_block {
+#header_name_text_block {
 	background: #4aaaa5;
 	width: 250px;
 	height: 90px;
@@ -137,9 +73,15 @@ footer {
 	align-items: center;
 }
 
-#name_text {
+#header_name_text {
 	margin: auto;
 	color: white;
+}
+
+
+/* selectors for nav content */
+nav {
+	height: 20px;
 }
 
 .nav_link {
@@ -148,20 +90,22 @@ footer {
 	padding: 0px 15px;
 	float: left;
 
-	transition: all 0.5s ease-in-out;
-}
-
-.nav_horiz_bar {
-	background: #efefef;
-	width: 1px; 
-	height: 100%;
-	float: left;
+	transition: all 0.2s linear;
 }
 
 .nav_link:hover {
 	background: #efefef;
 }
 
+.nav_vertical_bar {
+	background: #efefef;
+	width: 1px; 
+	height: 100%;
+	float: left;
+}
+
+
+/* selectors for main content (section + aside) */
 #main_block {
 	width: 960px;
 	margin: 40px auto;
@@ -170,8 +114,15 @@ footer {
 	justify-content: space-between;
 }
 
-#section_margins {
-	margin: 35px 30px 30px 30px;
+section, aside {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	width: 588px;
+	padding: 35px 30px 30px 30px;
+}
+
+section p {
+	line-height: 190%;
 }
 
 #section_grey_line {
@@ -180,8 +131,22 @@ footer {
 	margin: 25px 0 20px 0;
 }
 
-#aside_margins {
-	margin: 25px 30px;
+aside {
+	width: 208px;
+	height: 133px;
+	padding: 25px 30px 40px 30px;
+}
+
+aside img {
+	width: 60px;
+	height: 60px;
+
+	transition: all 0.2s;
+}
+
+aside img:hover {
+	width: 64px;
+	height: 64px;
 }
 
 #aside_grey_line {
@@ -195,20 +160,35 @@ footer {
 	justify-content: space-between;
 }
 
+
+/* selectors for footer content */
+footer {
+	background: #666666;
+	border-top: 9px solid #4aaaa5;
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 #footer_text {
 	font-size: 12px;
 	color: #cccccc;
 }
 
-/* index.html only */
+
+/* selectors unique to index.html*/
 #profile_image {
 	float: left;
 	margin: 10px 25px 10px 0px;
 }
 
-/* portfolio.html only */
-.portfolio_pic_left, .portfolio_pic_right {
-	margin: 20px 0px 31px 0px;
+
+/* selectors unique to portfolio.html*/
+.portfolio_pic_left, .portfolio_pic_right, .portfolio_pic_bottom {
+	height: 205px;
+	margin: 20px 0px 36px 0px;
 	position: relative;
 	float: left;
 }
@@ -217,12 +197,16 @@ footer {
 	float: right;
 }
 
+.portfolio_pic_bottom {
+	margin-bottom: 0px;
+}
+
 .portfolio_pic_text_block {
 	background: #4aaaa5;
 	width: 100%;
-	height: 44px;
+	height: 42px;
 	margin-top: 136px;
-	padding-top: 16px;
+	padding-top: 18px;
 	position: absolute;
 	float: left;
 
@@ -230,6 +214,44 @@ footer {
 	font-size: 22px;
 	color: white;
 	text-align: center;
+
+	transition: all 0.2s linear;
 }
 
-/* contact.html only */
+.portfolio_pic_text_block:hover {
+	background: #777777;
+}
+
+
+/* selectors unique to contact.html */
+input, textarea {
+	border: 1px solid #dddddd;
+	width: 564px;
+	margin-top: 5px;
+	padding: 8px 10px;
+
+	font-size: 14px;
+	color: #a9a9a9;
+}
+
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0px;
+	outline: none;
+	width: auto;
+	margin-top: 15px;
+	padding: 10px 30px;
+
+	font-size: 18px;
+	color: white;
+
+	transition: all 0.2s linear;
+}
+
+input[type=submit]:hover {
+	background: #777777;
+}
+
+textarea {
+	height: 198px;
+}
