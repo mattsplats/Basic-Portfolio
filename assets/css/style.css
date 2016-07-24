@@ -37,22 +37,14 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 30px;
 	color: #4aaaa5;
 }
 
-h2 {
+h3 {
 	font-size: 22px
-}
-
-p {
-	line-height: 190%;
 }
 
 input, textarea {
@@ -80,7 +72,7 @@ input[type=submit] {
 	font-size: 18px;
 	color: white;
 
-	transition: background 0.5s ease-in-out;
+	transition: background 0.1s;
 }
 
 input[type=submit]:hover {
@@ -88,17 +80,30 @@ input[type=submit]:hover {
 }
 
 
-/* header, nav, footer */
+/* main section blocks */
 header {
 	background: #ffffff;
 	border-bottom: 2px solid #cccccc;
 }
 
 nav {
-	height: 90px;
+	height: 20px;
+}
 
-	display: flex;
-	align-items: center;
+section, aside {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	width: 648px;
+	color: #777777;
+}
+
+aside {
+	width: 268px;
+	height: 198px;
+}
+
+section p {
+	line-height: 190%;
 }
 
 footer {
@@ -119,6 +124,7 @@ footer {
 	margin: 0px auto;
 
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -136,8 +142,24 @@ footer {
 	color: white;
 }
 
-.nav_add_bar {
-	border-right: thin solid #efefef;
+.nav_link {
+	background: white;
+	height: 100%;
+	padding: 0px 15px;
+	float: left;
+
+	transition: all 0.5s ease-in-out;
+}
+
+.nav_horiz_bar {
+	background: #efefef;
+	width: 1px; 
+	height: 100%;
+	float: left;
+}
+
+.nav_link:hover {
+	background: #efefef;
 }
 
 #main_block {
@@ -148,37 +170,21 @@ footer {
 	justify-content: space-between;
 }
 
-#main_content, #connect_with_me {
-	background: #ffffff;
-	border: 1px solid #dddddd;
-	width: 648px;
-	color: #777777;
-}
-
-#content_margins {
+#section_margins {
 	margin: 35px 30px 30px 30px;
 }
 
-#content_grey_line {
+#section_grey_line {
 	background: #dddddd;
 	height: 3px;
 	margin: 25px 0 20px 0;
 }
 
-#connect_with_me {
-	width: 268px;
-	height: 198px;
-}
-
-#connect_margins {
+#aside_margins {
 	margin: 25px 30px;
 }
 
-#connect_icon_middle {
-	margin: 0 8px;
-}
-
-#connect_grey_line {
+#aside_grey_line {
 	background: #EEEEEE;
 	height: 2px;
 	margin: 20px 0;
