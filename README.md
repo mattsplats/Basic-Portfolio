@@ -8,3 +8,5 @@ Additions to the assignment include:
 * On-hover background for the nav links
 * Slight enlargement of the social link icons when hovered over
 * Color transitions on hovering over the submit button and portfolio "links"
+
+I also used `display: flex` in many places where `float` would have sufficed, to reduce the amount of manual positioning required.
