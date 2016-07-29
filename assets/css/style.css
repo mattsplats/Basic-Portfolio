@@ -81,13 +81,14 @@ header {
 /* selectors for nav content */
 nav {
 	height: 20px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .nav_link {
 	background: white;
 	height: 100%;
 	padding: 0px 15px;
-	float: left;
 
 	transition: all 0.2s linear;
 }
@@ -100,7 +101,6 @@ nav {
 	background: #efefef;
 	width: 1px; 
 	height: 100%;
-	float: left;
 }
 
 
@@ -179,24 +179,27 @@ footer {
 
 /* selectors unique to index.html*/
 #profile_image {
-	float: left;
 	margin: 10px 25px 10px 0px;
+	float: left;
 }
 
 
 /* selectors unique to portfolio.html*/
-.portfolio_pic_left, .portfolio_pic_right, .portfolio_pic_bottom {
+#portfolio_pic_block {
+	width: 588px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.portfolio_pic {
 	height: 205px;
-	margin: 20px 0px 36px 0px;
+	margin-bottom: 56px;
 	position: relative;
-	float: left;
 }
 
-.portfolio_pic_right {
-	float: right;
-}
-
-.portfolio_pic_bottom {
+.portfolio_pic:last-child {
 	margin-bottom: 0px;
 }
 
@@ -207,7 +210,6 @@ footer {
 	margin-top: 136px;
 	padding-top: 20px;
 	position: absolute;
-	float: left;
 
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 22px;
@@ -223,6 +225,10 @@ footer {
 
 
 /* selectors unique to contact.html */
+form {
+	margin-top: 27px;
+}
+
 input, textarea {
 	border: 1px solid #dddddd;
 	width: 564px;
