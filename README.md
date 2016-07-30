@@ -6,7 +6,7 @@ This is my completed Week 1 recommended homework assignment.  All details are ma
 
 Additions to the assignment include:
 * On-hover background for the nav links
-* Slight enlargement of the social link icons when hovered over
+* Reduced opacity of the social links when hovered over (previously scaled them up slightly, but this cause animation jitter in Chrome)
 * Color transitions on hovering over the submit button and portfolio "links"
 
 I also used `display: flex` in many places where `float` would have sufficed, to reduce the amount of manual positioning required.
